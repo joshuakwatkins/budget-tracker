@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 const CACHE_NAME = "budget-tracker-cache";
 const DATA_CACHE_NAME = "budget-tracker-data-cache";
 
