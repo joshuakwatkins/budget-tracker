@@ -14,11 +14,8 @@ fetch("/api/transaction")
     return response.json();
   })
   .then((data) => {
-    console.log(data);
     // save db data on global variable
-    let staging = [];
-    staging.push(data);
-    transactions = staging;
+    transactions = data;
 
     populateTotal();
     populateTable();
