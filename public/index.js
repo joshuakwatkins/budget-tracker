@@ -16,7 +16,7 @@ fetch("/api/transaction")
   .then((data) => {
     console.log(data);
     // save db data on global variable
-    transactions = data;
+    transactions.push(data);
 
     populateTotal();
     populateTable();
